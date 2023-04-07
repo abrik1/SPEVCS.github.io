@@ -30,6 +30,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 1s ease;
 }
 
 .topnav a:hover {
