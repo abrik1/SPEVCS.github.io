@@ -16,30 +16,39 @@
             <div class="navigation">
                 <ul>
                     <li class="list active">
+                        <b></b>
+                        <b></b>
                         <a href="#">
-                            <span class="text">SPEVCS</span>
-                            <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                            <img src="images/green-lanterns-low-resolution-color-logo.png" alt="LOGO">
                         </a>
                     </li>
                     <li class="list">
+                        <b></b>
+                        <b></b>
                         <a href="#">
                             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                             <span class="text">Home</span>
                         </a>
                     </li>
                     <li class="list">
+                        <b></b>
+                        <b></b>
                         <a href="#">
                             <span class="icon"><ion-icon name="clipboard-outline"></ion-icon></span>
                             <span class="text">About</span>
                         </a>
                     </li>
                     <li class="list">
+                        <b></b>
+                        <b></b>
                         <a href="#">
                             <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
                             <span class="text">Contact</span>
                         </a>
                     </li>
                     <li class="list">
+                        <b></b>
+                        <b></b>
                         <a href="#">
                             <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
                             <span class="text">Sign-In</span>
@@ -51,15 +60,17 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script>
-            let list = document.querySelectorAll('.list');
-            for (let i=0;i<list.length;i++){
-                let i = 0;
-                while(i < list.length){
-                    list[i++].className = 'list';
-                }
-                list[1].className = 'list active';
-            }
+            const lists = document.querySelectorAll('.list');
+            lists.forEach((list) => {
+                list.addEventListener('click', () => {
+                    lists.forEach((item) => {
+                        item.classList.remove('active');
+                    });
+                    list.classList.add('active');
+                });
+            });
         </script>
+        
     </body>
 
 </html>
