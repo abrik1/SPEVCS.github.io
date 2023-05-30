@@ -27,7 +27,7 @@ body {
     content: "";
     position: absolute;
     width: 3px;
-    height: calc(100% - 45px);
+    height: calc(100% - 75px);
     left: 40px;
     top: 25px;
     background: #8abe53;
