@@ -4,73 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPEVCS - Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700">
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <title>Home-Page</title>
 </head>
 
 <body>
-    <div class="Section_top">
-        <div class="header">
-            <div class="navigation">
-                <ul>
-                    <li class="list active">
-                        <b></b>
-                        <b></b>
-                        <a href="#">
-                            <img src="images/green-lanterns-low-resolution-color-logo.png" alt="LOGO">
-                        </a>
-                    </li>
-                    <li class="list">
-                        <b></b>
-                        <b></b>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                            <span class="text">Home</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <b></b>
-                        <b></b>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="clipboard-outline"></ion-icon></span>
-                            <span class="text">About</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <b></b>
-                        <b></b>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
-                            <span class="text">Contact</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <b></b>
-                        <b></b>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
-                            <span class="text">Sign-In</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script>
-            const lists = document.querySelectorAll('.list');
-            lists.forEach((list) => {
-                list.addEventListener('click', () => {
-                    lists.forEach((item) => {
-                        item.classList.remove('active');
-                    });
-                    list.classList.add('active');
-                });
-            });
-        </script>
-        
-    </body>
+    <nav class="navmenu">
+        <ul>
+            <li><a href="#" class="active"><span>Home</span></a></li>
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>Reviews</span></a></li>
+            <li><a href="#"><span>Services</span></a></li>
+        </ul>
+    </nav>
+</body>
 
 </html>
