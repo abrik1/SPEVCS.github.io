@@ -165,7 +165,11 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
+<<<<<<< HEAD
+    background-color: #228B22;
+=======
     background-color: #79E0EE;
+>>>>>>> bdd57b49939dfdb85f82328a642ffb2f6035909f
     box-sizing: border-box;
     width: 30px;
     height: 2px;
@@ -210,6 +214,8 @@ ul {
     background-color: #79E0EE;
 }
 
+<<<<<<< HEAD
+=======
 .footer-a {
     font-size: 16px;
     text-transform: capitalize;
@@ -226,6 +232,7 @@ ul {
     color: #228B22;
 }
 
+>>>>>>> bdd57b49939dfdb85f82328a642ffb2f6035909f
 /* footer's code ends here */
 /* Button's code starts here */
 .a {
@@ -365,7 +372,11 @@ ul {
     transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
+.inset{
+=======
 .inset {
+>>>>>>> bdd57b49939dfdb85f82328a642ffb2f6035909f
     position: absolute;
     inset: 5px;
     border-radius: 16px;
@@ -430,6 +441,8 @@ ul {
         opacity: 1;
         transform: translateY(0);
     }
+<<<<<<< HEAD
+=======
 }
 
 /* credit page's css ends here */
@@ -603,4 +616,5 @@ img {
 
 .custom-question button:hover {
     background-color: #98eecc;
+>>>>>>> bdd57b49939dfdb85f82328a642ffb2f6035909f
 }
