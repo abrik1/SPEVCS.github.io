@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Sign In</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
+    * {
       margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100%;
+      background-color: #176B87;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
     }
 
     .form-box {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 300px;
+      width: 380px;
+      height: 480px;
+      position: relative;
+      margin: 6% auto;
+      background: #fff;
+      padding: 5px;
     }
 
-    .form-group {
-      margin-bottom: 20px;
-      width: 100%;
+    .button-box {
+      width: 220px;
+      margin: 35px auto;
+      box-shadow: 0 0 20px 9px #ff61241f;
+      border-radius: 30px;
     }
 
-    .form-group label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .form-group button {
-      padding: 10px 20px;
-      background-color: #4caf50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
+    .toggle-btn {
+      padding: 10px 30px;
       cursor: pointer;
+      background: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
     }
 
-    .form-group button:hover {
-      background-color: #45a049;
-    }
-
-    .form-group .signup-link {
-      margin-top: 10px;
-      text-align: center;
+    #btn {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 110px;
+      height: 100%;
+      background: linear-gradient(to right, #ff105f, #ffad06);
+      border-radius: 30px;
+      transition: .5s;
     }
   </style>
 </head>
+
 <body>
-  <div class="form-box">
-    <h2>Sign In</h2>
-    <form id="signin-form" class="form-group">
-      <label for="signin-username">Username</label>
-      <input type="text" id="signin-username" required>
-      <label for="signin-password">Password</label>
-      <input type="password" id="signin-password" required>
-      <button type="submit">Sign In</button>
-    </form>
-    <div class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></div>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn">Log-In</button>
+        <button type="button" class="toggle-btn">Sign-Up</button>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
