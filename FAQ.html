@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9f1ab97ea8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="//code.tidio.co/wxdoxbt8v1ebx4cw8rmp21odesemdcfj.js" async></script>
+    <title>FAQ Page</title>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            var answerDisplayStyle = window.getComputedStyle(answer).display;
+
+            if (answerDisplayStyle === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="topnav">
+        <header>
+            <a class="logo" href="/">SPEVCS.</a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">SignIn</a>
+        </header>
+    </div>
+    <div class="heading">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q1')">Q: What is the registration process?</div>
+        <div class="answer" id="q1">
+            <p>The registration process is simple. Visit our website and click on the 'Register' button. Fill out the
+                required information and submit the form. You will receive a confirmation email with further
+                instructions.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q2')">Q: How can I reset my password?</div>
+        <div class="answer" id="q2">
+            <p>To reset your password, go to the login page and click on the 'Forgot Password' link. Enter your email
+                address and follow the instructions sent to your email to reset your password.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q3')">Q: Can I cancel my subscription?</div>
+        <div class="answer" id="q3">
+            <p>Yes, you can cancel your subscription at any time. Log in to your account, go to the 'Subscription'
+                section, and click on the 'Cancel Subscription' button. Follow the prompts to complete the cancellation
+                process.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('q4')">Q: How can I contact customer support?</div>
+        <div class="answer" id="q4">
+            <p>You can contact our customer support team by emailing support@company.com or by calling our toll-free
+                number 1-800-123-4567. Our support team is available 24/7 to assist you with any queries or concerns you
+                may have.</p>
+        </div>
+    </div>
+
+    <div class="custom-question">
+        <h3>Still have a question? Ask us!</h3>
+        <form>
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" placeholder="Type your question here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container-3">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="About.html">
+                        <h4>Company</h4>
+                    </a>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="Product.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="Credit.html">
+                        <h4>Credits</h4>
+                    </a>
+                    <ul>
+                        <li><a href="ishan.html">Ishan Rajvanshi</a></li>
+                        <li><a href="hardik.html">Hardik Agrawal</a></li>
+                        <li><a href="reet.html">Reet Agrawal</a></li>
+                        <li><a href="yashraj.html">Yashraj Singh Naruka</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="FAQ.html">
+                        <h4>Get Help</h4>
+                    </a>
+                    <ul>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100093572034956"><i
+                                class="fab fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/spevcs_xx/" target="_blank"><i
+                                class="fab fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/in/green-lanterns-365546280/" target="_blank"><i
+                                class="fab fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@greenlanterns" target="_blank"><i
+                                class="fab fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
