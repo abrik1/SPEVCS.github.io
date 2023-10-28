@@ -95,9 +95,13 @@ header {
 
 
 .para {
+    word-wrap: normal;
+    display: flex;
     margin-top: -300px;
     position: absolute;
-    width: 25%;
+    width: 20%;
+    text-align: justify;
+    border: 2px solid;
 }
 
 .column {
@@ -129,7 +133,21 @@ header {
     padding: 70px 0;
     width: 100%;
     bottom: 0;
-    position: relative;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+.about{
+    background: #001C30;
+    padding: 70px 0;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
 }
 
 ul {
@@ -203,6 +221,25 @@ ul {
     color: #ffffff;
     transition: all 0.3s ease;
     text-align: center;
+}
+
+.container-login .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(225, 225, 225, 0.2);
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #24262b;
+    color: #79e0ee;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.container-login .social-links a:hover {
+    color: #24262b;
+    background-color: #79E0EE;
 }
 
 .footer-col .social-links a:hover {
@@ -386,7 +423,6 @@ ul {
 }
 
 
-
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -439,12 +475,14 @@ ul {
     margin-left: 240px;
     padding: 20px;
     margin-top: -250px;
+    word-wrap: inherit;
 }
 
 .skills {
     display: block;
     top: 110px;
     width: 11%;
+    word-wrap: inherit;
 }
 
 /* description page css end's here */
@@ -461,7 +499,6 @@ ul {
 
 img {
     width: 100%;
-
 }
 
 .container .card {
@@ -476,6 +513,32 @@ img {
     transition: .5s;
 }
 
+.container .content .h1{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.container-login{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.container-login .card-login{
+    width: 35%;
+    left: 50%;
+    padding: 10px;
+    height: 35%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    margin: auto;
+    overflow: hidden;
+    transition: .5s;    
+    word-wrap: break-word;
+}
+
 .container .card .circle {
     position: relative;
     width: 100%;
@@ -483,6 +546,9 @@ img {
     background-color: #000;
     clip-path: circle(180px at center 0);
     text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -573,6 +639,7 @@ img {
     padding: 10px;
     border-radius: 5px;
     resize: vertical;
+    outline: none;
 }
 
 .custom-question button {
@@ -605,4 +672,58 @@ img {
     box-shadow:0 0 20px 9px #228B22;
     border-radius: 30px;
     margin-top: 1px;
+}
+
+.container-login .card-login .Login{
+    font-size: 24px;
+}
+
+.container-login .card-login input[type=password]{
+    word-wrap: break-word;
+    border: none;
+    border-bottom: #001C30 2px solid;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+}
+
+.container-login .card-login input{
+    word-wrap: break-word;
+    padding-top: 5px;
+    width: 80% ;
+    border: none;
+    border-bottom: #001C30 2px solid;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline: none;
+}
+
+.container-login .card-login .login-button{
+    background-color: #176B87;
+    color: white;
+    align-items: center;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    word-wrap: break-word;
+    padding: 3px;
+}
+
+.container-login .card-login .login-button{
+    align-self: center;
+    background-color: #0c3847;
+    color: white;
+    align-items: center;
+    border: 10px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    padding: 3px;
+    width: 50%;
+    bottom: 0;
+}
+
+.container-login .card-login .login-button:hover{
+    background-color: #0f4a5e;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
