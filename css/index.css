@@ -330,6 +330,38 @@ ul {
     transition-delay: 0.75s;
 }
 
+/*Underline animation*/
+.a2{
+    position: relative;
+    text-decoration: none;
+  }
+  .a2:after{
+    content: "";
+    position: absolute;
+    background:  -webkit-linear-gradient(328deg,#004225,#008b4f);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  .a2:hover{
+    color: #ffffff;
+  }
+  .a2:hover:after{
+    width: 100%;
+  }
+  /* On Page Underline*/
+  u{
+    font-weight: 700;
+    margin-top: 5rem;
+    text-decoration: underline;
+    text-decoration-color: #008b4f;
+    text-decoration-thickness: 4px;
+
+  }
+
+
 /* button's code ends here */
 /* credit page's css starts here */
 .container-1 {
