@@ -6,8 +6,9 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #176B87;
+    background:#e6e6e6 ;
     line-height: 1.5;
+    cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTAuNjY2NjcsMTAuNjY2NjcpIj48cGF0aCBkPSJNNSwyMy45MzJ2LTIzLjAyMWwxNy4yNDksMTUuMzMybC05LjgyMywxLjUzM3pNNyw1LjM2NHYxNC4zMTJsNC41NzQsLTMuNzkxbDYuMTc3LC0wLjk2NXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=") 3 0, default;
 }
 
 /* nav bar css starts here */
@@ -15,14 +16,14 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #001C30;
+    background-color: #fff;
     height: 70px;
     box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.473);
 }
 
 .logo {
     text-decoration: none;
-    color: #FBFFDC;
+    color: #000000;
     font-size: 25px;
     font-weight: 1000;
     float: left;
@@ -39,7 +40,7 @@ header {
 .cta,
 .overlay__content a {
     font-weight: 500;
-    color: #FBFFDC;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -64,6 +65,7 @@ header {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-right: 20px;
+    color: #fff;
 }
 
 .cta:hover {
@@ -85,13 +87,24 @@ header {
     border-radius: 50px;
 }
 
+.img{
+    border-radius: 19px;
+    
+}
+
 
 .card-1 {
-    background-color: #64CCC5;
+    background-color: #ffffff08;
+    border: 1px;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 40px;
     border-radius: 50px;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    filter: drop-shadow(2px 2px 6px black);
 }
 
 
@@ -102,7 +115,6 @@ header {
     position: absolute;
     width: 20%;
     text-align: justify;
-    border: 2px solid;
 }
 
 .column {
@@ -116,6 +128,13 @@ header {
 
 .column p {
     width: 30%;
+    
+}
+
+.des2 {
+    font-size: 14px;
+    line-break: auto;
+    color: #fff;
 }
 
 .column .fakeing {
@@ -130,7 +149,7 @@ header {
 
 /* footer's code starts here */
 .footer {
-    background: #001C30;
+    background:#259069;
     padding: 70px 0;
     width: 100%;
     bottom: 0;
@@ -184,7 +203,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #228B22;
+    background-color: #ffffff;
     box-sizing: border-box;
     width: 30px;
     height: 2px;
@@ -201,13 +220,13 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #ffffff;
     display: block;
     transition: 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #DAFFFB;
+    color: #ffffff;
     padding-left: 8px;
 }
 
@@ -768,7 +787,7 @@ img {
     left: 0;
     height: 5px;
     width: 0;
-    background:  #fff;
+    background:  #259069;
     z-index: 98;
   }
 
@@ -813,19 +832,18 @@ img {
 
 /*Gallery End*/
 /*Scroll Bar start*/
-
-/* width */
-::-webkit-scrollbar {
-    width: 7px;
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #5a5a5a;
+    background: transparent; 
   }
-  
+   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(186deg, rgba(154,255,154,1) 0%, rgba(0,179,141,1) 53%, rgba(0,107,184,1) 100%);
-    border-radius: 10px;
+    background: #303030; 
+    border-radius: 3px;
   }
