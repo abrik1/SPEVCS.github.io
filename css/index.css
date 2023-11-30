@@ -17,6 +17,7 @@ header {
     align-items: center;
     background-color: #001C30;
     height: 70px;
+    box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.473);
 }
 
 .logo {
@@ -338,7 +339,7 @@ ul {
   .a2:after{
     content: "";
     position: absolute;
-    background:  -webkit-linear-gradient(328deg,#004225,#008b4f);
+    background:linear-gradient(186deg, rgba(154,255,154,1) 0%, rgba(0,179,141,1) 53%, rgb(118, 151, 129) 100%);
     height: 3px;
     width: 0;
     left: 0;
@@ -521,7 +522,6 @@ ul {
 /* product page css start's here */
 .container {
     position: relative;
-    width: 1150px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -759,3 +759,73 @@ img {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+
+
+/*Header Line*/
+#scrollProgress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background:  #fff;
+    z-index: 98;
+  }
+
+  /*Gallery Starts*/
+  .main-product{
+    position: relative;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .product-img{
+    border-radius: 11px;
+    box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.473);
+  }
+
+  .main-product .product-name{
+    position: absolute;
+    color: #fff;
+    border-width: 0cap;
+    bottom: 8%;
+    width: 90%;
+    margin-left: 4%;
+    text-align: center;
+    height: 19%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     
+  }
+  
+.product-div{
+    display: inline-flex;
+}
+
+
+.main-gallery{
+    text-align: center;
+}
+
+/*Gallery End*/
+/*Scroll Bar start*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #5a5a5a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(186deg, rgba(154,255,154,1) 0%, rgba(0,179,141,1) 53%, rgba(0,107,184,1) 100%);
+    border-radius: 10px;
+  }
