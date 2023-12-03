@@ -132,12 +132,25 @@ header {
     padding: 29px;
 }
 
-@media only screen and (max-width: 500px){
-  .card-1{
-    width: 90%;
-  }
+@media (max-width: 500px){
+    .nav_links li {
+        padding: 0px 10px;
+        font-size: 12px;
+    }
 
+    .cta {
+        margin-left: 4px;
+        padding: 7px 10px;
+        background-color: #00a800;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-right: 12px;
+    }
 }
+
+
 
 .column {
     float: left;
