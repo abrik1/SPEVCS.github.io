@@ -19,6 +19,7 @@ header {
     align-items: center;
     background-color: #001C30;
     height: 70px;
+    box-shadow: 0 5px 10px 0 rgb(143 104 206 / 16%);
 }
 
 .logo {
@@ -27,7 +28,7 @@ header {
     font-size: 25px;
     font-weight: 1000;
     float: left;
-    margin-right: 48%;
+    margin-right: 40%;
 }
 
 .nav_links {
@@ -132,6 +133,10 @@ header {
 }
 
 @media (max-width: 500px){
+    .product-div {
+        display: grid;
+    }
+     
     .nav_links li {
         padding: 0px 10px;
         font-size: 12px;
@@ -147,6 +152,21 @@ header {
         transition: all 0.3s ease 0s;
         margin-right: 12px;
     }
+
+   
+
+    .main-product {
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        margin: 20px;
+        display: grid;
+        text-align: center;
+        transition: 0.7s all;
+        justify-content: center;
+        justify-items: center;
+    }
+  
 }
 
 
@@ -843,16 +863,39 @@ ul {
     width: 195px;
     border-radius: 50%;
     border: #fff 4px solid;
-    margin-top: 46px;
+    margin-top: 90px;
     height: 194px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    animation-name: floating-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    position: relative;
+  }
+  @keyframes floating-animation 
+  {
+    0%{top: 0px;}
+    50%{top: 30px;}
+    100%{top: 0px;}
+  }
+  .dp-cloud-animation-advik
+  {
+    width: 200px;
+    margin-right: 130px;
+    text-align: center;
+    margin-top: -2%;
+  }
+  .dp-cloud-animation-advik2
+  {
+    width: 160px;
+    margin-right: -80px;
+    margin-top: -550px;
   }
 
  
   .hobby{
     color: #fff;
     background: #000046;
-    height: 389px;
     border-radius: 30px;
     font-size: 15px;
     margin: 4px;
@@ -885,6 +928,11 @@ ul {
     position: relative;
     width: 100%;
     margin: 20px;
+    transition: 0.7s all ;
+  }
+
+  .main-product:active{
+    transform: scale(0.96);
   }
 
   .product-img{
@@ -924,3 +972,27 @@ ul {
 h5{
     margin-bottom: 37px;
 }
+
+/*underline*/
+
+
+.a2{
+    position: relative;
+    text-decoration: none;
+  }
+  .a2:after{
+    content: "";
+    position: absolute;
+    background:  -webkit-linear-gradient(328deg,#62ffb0a9,#1fff01c4);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  .a2:hover{
+    color: #ffffff;
+  }
+  .a2:hover:after{
+    width: 100%;
+  }
