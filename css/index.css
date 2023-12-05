@@ -1164,3 +1164,29 @@ h5{
 }
 
   /* Services Page Css End */
+
+  /* About page css start */
+
+  .about1 {
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+}
+
+.h2-2 {
+    color: #f3f3f3;
+}
+
+.p-0 {
+    line-height: 1.6;
+    color: #e4e4e4;
+}
+
+.li-2{
+    color: #e4e4e4;
+}
