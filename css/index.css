@@ -166,7 +166,9 @@ header {
         justify-content: center;
         justify-items: center;
     }
-  
+
+
+    
 }
 
 
@@ -688,6 +690,10 @@ ul {
 }
 
 /* product page css start's here */
+
+.product-img-1{
+    height: 338px;
+}
 /* FAQ page css start's here */
 .heading {
     text-align: center;
@@ -957,6 +963,7 @@ ul {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
      
   }
+
   
 .product-div{
     display: inline-flex;
@@ -996,3 +1003,164 @@ h5{
   .a2:hover:after{
     width: 100%;
   }
+
+
+  /* Services Page Css Starts */
+
+  .cards{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-1{
+    background-color: #fff;
+    width: 355px;
+    border-radius: 12px;
+    margin: 30px;
+  }
+.card-header-on{
+    color: #fff;
+    background-color: #00dc00;
+    height: 98px;
+    display: flex;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+  .card-header{
+    color: #333;
+    background-color: #e4e4e4;
+    height: 98px;
+    display: flex;
+    font-size: 18px;
+    padding: 12px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-header:hover{
+    color: #fff;
+    background-color: #00dc00;
+  }
+
+  .card-header-title{
+    font-family: "Raleway",sans-serif;
+    font-size: 29px;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  .priceofmember{
+    background: #f6f6f6;
+    height: 109px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: flex;
+    font-size: 44px;
+    color: #414141;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  .c-icon{
+    color: #515151;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 2px;
+    margin-bottom: 6%;
+  }
+
+  .time{
+    font-size: 16px;
+  }
+  
+  .adv{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .adv-name{
+    font-family: "Lato",sans-serif;
+    text-align: center;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato",sans-serif;
+    font-size: 18px;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .adv-name:hover{
+    background-color: #e4e4e4;
+    border-left: #00be00 3px solid;
+  }
+
+  .adv4{
+    color: #a7a7a7;
+    margin-left: 1px;
+  }
+
+  .card-button{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .card-button-class{
+    padding: 20px;
+    font-size: 20px;
+    height: 46px;
+    display: flex;
+    border-radius: 27px;
+    border: 1px solid #2ECC71;
+    color: #2ECC71;
+    background: transparent;
+    margin: 0px 0 32px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .card-button-class:hover{
+    color: #fff;
+    background-color: #2ECC71;
+  }
+
+  .card-button-class-on{
+    padding: 20px;
+    font-size: 20px;
+    height: 46px;
+    color: #fff;
+    background-color: #2ECC71;
+    border: none;
+    display: flex;
+    border-radius: 27px;
+    margin: 0px 0 32px;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  @media (max-width: 500px){
+    .cards{
+        display: grid;
+        justify-content: center;
+    }
+
+    
+}
+
+  /* Services Page Css End */
