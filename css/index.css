@@ -686,8 +686,23 @@ ul {
 /* FAQ page css start's here */
 .heading {
     text-align: center;
-    color: #001c30;
     margin-bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.top-567{
+    display: inline-grid;
+    margin: 30px;
+    text-align: unset;
+    justify-content: center;
+    
+}
+
+.upper-faq{
+    display: flex;
+    justify-content: center;
 }
 
 .question {
@@ -695,23 +710,26 @@ ul {
     margin-bottom: 10px;
     cursor: pointer;
     color: #001c30;
-    background-color: #79e0ee;
-    padding: 10px;
+    background-color: #ffffff;
+    padding: 24px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .question:hover {
-    background-color: #98eecc;
+    background-color: #98c0ee;
 }
 
 .answer {
     margin-bottom: 20px;
     display: none;
     padding: 10px;
-    background-color: #c5daff;
+    background-color: #8fb8ff;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    
+    
 }
 
 .answer p {
@@ -721,6 +739,7 @@ ul {
 .custom-question {
     margin-bottom: 20px;
     padding: 20px;
+    text-align: center;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -744,7 +763,7 @@ ul {
 .custom-question button {
     padding: 10px 20px;
     background-color: #79e0ee;
-    color: #001c30;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -909,7 +928,7 @@ ul {
     left: 0;
     height: 5px;
     width: 0;
-    background: linear-gradient(90deg, rgba(31,141,190,1) 35%, rgba(0,255,59,1) 100%);;
+    background: #00b300;
     z-index: 98;
   }
 
@@ -1389,4 +1408,52 @@ h5{
         display: none;
     }
     
+ }
+
+ /*Contact Page CSS starts*/
+
+ .main-contact{
+
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 44px;
+    width: 90%;
+    font-size: 20px;
+    height: auto;
+    border-radius: 50px;
+
+
+    position: relative;
+    color: #fff;
+    border-width: 0cap;
+    bottom: 8%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+ }
+
+ .main-contact-2{
+    display: flex;
+    justify-content: center;
+ }
+
+ iframe{
+    width: 100%;
+    border-radius: 7px;
+ }
+
+ .contact-id{
+    text-transform: capitalize;
+    font-size: 20px;
+ }
+
+ .email{
+    text-decoration: underline;
+    text-decoration-color: #65ff65;
+    text-decoration-thickness: 3px;
+    color: #fff;
+    text-transform:lowercase;
  }
