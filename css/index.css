@@ -693,10 +693,7 @@ ul {
 }
 
 .top-567{
-    display: inline-grid;
-    margin: 30px;
-    text-align: unset;
-    justify-content: center;
+    margin: 50px;
     
 }
 
@@ -739,8 +736,9 @@ ul {
 .custom-question {
     margin-bottom: 20px;
     padding: 20px;
+    color: #fff;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #98c0ee;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -749,6 +747,7 @@ ul {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #454545;
 }
 
 .custom-question textarea {
@@ -942,8 +941,9 @@ ul {
     position: relative;
     width: 100%;
     margin: 20px;
-    transition: 0.7s all ;
+    transition: 0.4s all ;
   }
+
 
   .main-product:active{
     transform: scale(0.96);
@@ -1444,7 +1444,10 @@ h5{
     width: 100%;
     border-radius: 7px;
  }
-
+ .contact-id-2{
+    font-weight: 200;
+    font-size: 16px;
+ }
  .contact-id{
     text-transform: capitalize;
     font-size: 20px;
