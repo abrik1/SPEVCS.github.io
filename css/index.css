@@ -29,7 +29,8 @@ header {
     font-size: 25px;
     font-weight: 1000;
     float: left;
-    margin-right: 40%;
+    margin-right: 60%;
+    padding: 12px;
 }
 
 .nav_links {
@@ -1556,3 +1557,96 @@ h5{
     color: #EF3B3A;
   }
   
+
+  /*new-credit page css starts*/
+
+  .person-credits{
+    width: 271px;
+    z-index: 3;
+    height: 480px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 30px;
+  }
+
+  .person-credits-1{
+    width: 271px;
+    height: 480px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 30px;
+    background: linear-gradient(184deg, rgba(246,205,255,1) 0%, rgba(139,41,200,1) 45%, rgba(82,0,214,1) 100%);
+    right: 53%;
+    transform: scale(0.90);
+    position: absolute;
+    opacity: 0.4;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s;
+  }
+
+  .person-credits-1:hover{
+    opacity: 1;
+    right: 58%;
+  }
+
+ 
+  .person-credits-2{
+    width: 271px;
+    height: 480px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 30px;
+    background: linear-gradient(184deg, rgb(255, 226, 226) 0%, rgb(255, 143, 143) 45%, rgba(255,82,82,1) 100%);
+    left: 53%;
+    transform: scale(0.90);
+    position: absolute;
+    opacity: 0.4;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s;
+  }
+
+  .person-credits-2:hover{
+    opacity: 1;
+    left: 58%;
+  }
+
+  .img-of-credits{
+    width: 60%;
+    border-radius: 50%;
+    border: 3px #fff solid;
+    padding: 4px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+  }
+
+
+  .img-of-credits:active{
+    transform: scale(0.96);
+  }
+  .main-new-credit{
+    display: grid;
+    align-items: center;
+    height: 90vh;
+    justify-items: center;
+  }
+
+  .new-credit-h1{
+    font-size: 24px;
+    margin-bottom: 3%;
+  }
+
+  .new-credit-buttion{
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+    width: 80px;
+    border-radius: 46px;
+    transform: scale(1.5);
+    margin: 31px;
+    border: #32e232 2px solid;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s;
+  }
+
+  .new-credit-buttion:hover{
+background: #32e232;
+  }
