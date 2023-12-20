@@ -933,6 +933,9 @@ ul {
     z-index: 98;
   }
 
+  #scrollToTop{
+    display: none;
+  }
   .seemore{
     font-size: 10px;
   }
@@ -1649,4 +1652,62 @@ h5{
 
   .new-credit-buttion:hover{
 background: #32e232;
+  }
+
+
+  .button-credit{
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 12px;
+    border: none;
+    margin: 12px;
+    transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
+  .button-credit:active{
+    transform: scale(0.96);
+  }
+  @media (max-width: 1000px){
+    .person-credits{
+      width: 90%;
+      height: min-content;
+      text-align: left;
+      display: grid;
+    }
+  
+    .person-credits-1{
+      width: 100%;
+      position: static;
+      opacity: 1;
+      height: min-content;
+      text-align: left;
+      display: grid;
+    }
+   
+    .person-credits-2{
+      width: 100%;
+      position: static;
+      opacity: 1;
+      height: min-content;
+      margin-bottom: 30px;
+      text-align: left;
+      display: grid;
+    }
+  
+    .img-of-credits{
+      width: 22%;
+    }
+
+    .logo{
+      display: none;
+    }
+
+    .header-2{
+      text-align: center;
+      display: block;
+    }
+
+    .new-credit-buttion{
+      margin: 22px;
+    }
   }
