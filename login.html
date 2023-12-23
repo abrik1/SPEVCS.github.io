@@ -1,75 +1,72 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/9f1ab97ea8.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <script src="https://kit.fontawesome.com/0eb23493f6.js" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-9846671ed7c9dd69b10c93f6b04b31fe.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+      >
+
+      <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
+<body style="background: #161616; color: #fff;">
+    <header class="header-2" style="background-color: #000;">
+        <a class="logo" href="index.html">SPEVCS.</a> 
+        <i class="fa-thin fa-aperture fa-xl" style="color: #ffffff; padding: 9px;"></i>
+        <i class="fa-thin fa-user fa-xl" style="color: #fff; padding: 9px;"></i>
+        <i class="fa-thin fa-cart-shopping fa-xl" style="color: #ffffff; padding: 9px;"></i>
 
-<body>
-    <button id="scrollToTop" onclick="scrollToTop()"></button>
-  <div id="scrollProgress"></div>
-    <div class="topnav">
-        <header>
-            <a class="logo" href="index.html">SPEVCS.</a>
-             <nav>
-                 <ul class="nav_links">
-                    <li><a href="Services.html" class="a2">Services</a></li>
-                     <li><a href="gallery.html" class="a2">Gallery</a></li>
-                     <li><a href="Product.html" class="a2">Products</a></li>
-                     <li><a href="about.html" class="a2">About</a></li>
-                     <li><a href="Contact.html" class="a2">Contact</a></li>
-                 </ul>
-             </nav>
-             <a class="cta" href="#">SignIn</a>
-         </header>
-<nav role="navigation" class="navigation">
-    <div id="menuToggle">
-      <input type="checkbox" />
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <ul id="menu">
-        <a href="Services.html"><li>Services</li></a>
-        <a href="gallery.html"><li>Gallery</li></a>
-        <a href="Product.html"><li>Products</li></a>
-        <a href="about.html"><li>About</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-      </ul>
+        <i class="bi bi-brightness-high-fill" id="toggleDark" style="padding: 12px;"></i>
+    </header>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+          <a href="#" class="a5">
+            Login
+          </a>
+        </form>
+      </div>
     </div>
-  </nav>
-    </div>
-
-        <div class="container-login">
-            <div class="card-login">
-                <h1 align="center" style="margin-top: 25px;">Sign In</h1>
-                <form>
-                    <p style="font-size: 24px;">
-                        <i class="fas fa-user"></i>
-                        <input placeholder="Enter your username"><br>
-                        <i class="fas fa-key"></i>
-                        <input type="password" placeholder="Password">
-                    </p>
-                    <br><br><br>
-                    <button class="login-button" align="center">Login</button>
-                    <button class="login-button" align="center" style="padding-top: 5px;margin-top: 5px;">Sign Up</button>
-                    <br><br><br><br>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=100093572034956"><i
-                                class="fab fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/spevcs_xx/" target="_blank"><i
-                                class="fab fa-brands fa-instagram"></i></i></a>
-                        <a href="https://www.linkedin.com/in/green-lanterns-365546280/" target="_blank"><i
-                                class="fab fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.youtube.com/@greenlanterns" target="_blank"><i
-                                class="fab fa-brands fa-youtube"></i></a>
-                    </div>
-                </form>
-            </div>  
-        </div>
-    </div>
-</body>
+    </body>
+    </html>
