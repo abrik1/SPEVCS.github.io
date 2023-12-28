@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #176B87;
+    background: #0f0f14;
     line-height: 1.5;
     cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTAuNjY2NjcsMTAuNjY2NjcpIj48cGF0aCBkPSJNNSwyMy45MzJ2LTIzLjAyMWwxNy4yNDksMTUuMzMybC05LjgyMywxLjUzM3pNNyw1LjM2NHYxNC4zMTJsNC41NzQsLTMuNzkxbDYuMTc3LC0wLjk2NXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=") 3 0, default;
 }
@@ -18,7 +18,8 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #001C30;
+    background:transparent;
+    border-bottom: 2px white solid;
     height: 70px;
     box-shadow: 0 5px 10px 0 rgb(143 104 206 / 16%);
 }
@@ -206,7 +207,8 @@ header {
   }
   
   div#slider figure img { 
-    height: 500px; 
+    height: 500px;
+    filter: brightness(0.5); 
     width: 20%; 
     float: left; 
     object-fit: cover
@@ -227,7 +229,8 @@ header {
 
 /* footer's code starts here */
 .footer {
-    background-color: #001C30;
+    background-color: #0a0a0d;
+    border-top: #fff 2px solid;
     padding: 50px 0;
     height: 29%;
     width: 100%;
@@ -860,7 +863,8 @@ ul {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(53, 53, 53);
+    background:#909090;
+    ;
     width: 5px;
     border-radius: 10px;
   }
@@ -929,7 +933,7 @@ ul {
     left: 0;
     height: 5px;
     width: 0;
-    background: linear-gradient(90deg, rgba(255,114,114,1) 0%, rgba(88,91,157,1) 50%, rgba(143,84,154,1) 88%, rgba(152,79,130,1) 100%);;
+    background: linear-gradient(90deg, rgb(255 114 192) 0%, rgb(123 95 253) 50%, rgb(74 215 241) 88%, rgb(0 255 53) 100%);
     z-index: 98;
   }
 
@@ -1904,6 +1908,4 @@ background: #32e232;
       bottom: 100%;
     }
   }
-  
-
   
