@@ -92,6 +92,19 @@ body{
     align-items: flex-start;
 
 }
+.box-1-21-p{
+    background: #21232d;
+    filter: brightness(0.5);
+    display: grid;
+    width: 142px;
+    padding: 12px;
+    height: 346px;
+    justify-items: center;
+    color: #fff;
+    margin: 9px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+}
 
 .box-1-21{
     background: #21232d;
@@ -130,11 +143,6 @@ body{
     width: 249px;
     margin: 6px;
     height: 87px; 
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.2s;
-}
-
-.opt-1:active{
-    border: 2px #f8c85c solid;
 }
 
 .name-890{
@@ -155,6 +163,7 @@ body{
 }
 
 
+
 .time-per{
     font-size: 16px;
 }
@@ -169,4 +178,9 @@ body{
     border-radius: 8px;
     font-weight: 700;
     margin-top: 12px;
+    transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.lower-3r:hover{
+    transform: scale(0.98);
 }

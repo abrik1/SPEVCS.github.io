@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,8 +20,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background:transparent;
-    border-bottom: 2px white solid;
+    background: border-box;
     height: 70px;
     box-shadow: 0 5px 10px 0 rgb(143 104 206 / 16%);
 }
@@ -229,7 +230,7 @@ header {
 
 /* footer's code starts here */
 .footer {
-    background-color: #0a0a0d;
+    background-color: transparent;
     border-top: #fff 2px solid;
     padding: 50px 0;
     height: 29%;
@@ -1909,3 +1910,77 @@ background: #32e232;
     }
   }
   
+
+  .pop-up{
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 12px;
+    display: flex;
+    width: 90%;
+    margin-bottom: 44px;
+    height: 110%;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    padding: 7px;
+  }
+
+  .header-text-0{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 27px;
+    background:linear-gradient(90deg, rgba(15,217,255,1) 0%, rgba(28,86,255,1) 51%, rgba(231,40,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .text-09{
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  .pop-up-btn{
+    padding: 12px 40px 12px 70px;
+    border-radius: 5px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    background:transparent;
+    padding: 8px 20px;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    margin: 20px ;
+    margin-left: 0;
+    max-width: 260px;
+    border: 2px solid;
+  }
+
+  .img-499{
+width: 110px;
+height: 110px;
+border-radius: 110px;
+margin: 12px;
+border: 2px solid ;
+  }
+
+  .img-holder-1{
+width: 27%;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+
+  @media (max-width: 550px){
+    .pop-up{
+      display: grid;
+    }
+
+    .img-holder-1{
+      width: 100%;
+    }
+  }
+
+
