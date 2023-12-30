@@ -218,7 +218,7 @@ body{
     /* background: linear-gradient(93.87deg,#148e9c,#21ff69); */
     background:  linear-gradient(93.87deg,#5E81AC,#8FBCBB);
     padding: 14px 22px;
-    width: 190px;
+    width: auto;
     border-radius: 3px;
     border: 0;
     font-size: 20px;
