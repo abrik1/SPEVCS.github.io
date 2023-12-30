@@ -197,7 +197,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
-    background: url(/images/display1.png);
+    background: url(../images/display1.png);
     background-size: cover;
     background-repeat: no-repeat;
     align-content: space-evenly;
