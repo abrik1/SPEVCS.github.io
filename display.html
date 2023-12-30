@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="sec-of-display-1">
+        <div class="part-0">
+        <a class="logo-1" href="index.html">SPEVCS.</a>
+        <p class="p-tag">A SPEVCS is an environmentally sustainable infrastructure designed to charge electric vehicles (EVs) using solar energy.
+            This innovative solution integrates solar panels to harness renewable energy and charging equipment to offer a convenient and eco-friendly method of charging EVs.</p>
+        </div>
+        <div class="display-1">
+            <form id="emailForm">
+                <input type="email" placeholder="Email Address" id="emailInput" name="email" autocomplete="off" required>
+                <button type="button" id="checkButton" onclick="checkEmail()">Get Started &rarr;</button>
+              </form>
+            
+              <div id="resultMessage"></div>
+        <p class="help-0">I already have an account</p>
+    </div>
+    </section>
+    <div class="sec-display-end"></div>
+    <section class="sec-of-display-2" style="height: 1000vh;">
+
+    </section>
+    <script>
+        function checkEmail() {
+          var emailInput = document.getElementById('emailInput');
+          var resultMessage = document.getElementById('resultMessage');
+    
+          // Basic email validation using a regular expression
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          var isValidEmail = emailRegex.test(emailInput.value);
+    
+          if (isValidEmail) {
+            resultMessage.style.color = '#72ff6b';
+            resultMessage.innerHTML = 'Email is valid!';
+
+            // If the email is valid, redirect to the main page
+            window.location.href = 'index.html';
+          } else {
+            resultMessage.style.color = '#ff1b1b';
+            resultMessage.style.fontFamily = 'Inter';
+            resultMessage.innerHTML = 'Please enter a valid email address.';
+          }
+        }
+      </script>
+</body>
+</html>
