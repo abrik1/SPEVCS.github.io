@@ -6,20 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Login Page</title>
 </head>
 
-<body style="background-color: #c9d6ff;
-background:linear-gradient(103deg, #0f1014, #47425b);
+<body>
+<style>
+    body{
+        background-color: #c9d6ff;
+background:linear-gradient(to right, #131313, #616e9a);
 display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
 height: 100vh;
 font-family: 'Montserrat', sans-serif;
-">
+    }
 
-    <div class="container" id="container">
+    @media (max-width: 800px){
+      body{
+        background: #0f1014;
+        display: flow;
+      } 
+
+      .container1{
+        display: none;
+      }
+
+      .top-main-mobile-login{
+        display: flow;
+      }
+}
+</style>
+
+    <div class="container1" id="container1">
         <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
@@ -79,6 +99,74 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
     </script>
+
+    <!-- Mobile Login page HTML Starts -->
+<div class="top-main-mobile-login">
+    <div class="login-header-0">
+        <a class="logo-14" href="index.html">
+            SPEVCS.
+        </a>
+    </div>
+    <div class="box-Sign">
+        <h1 class="sign-in-text">
+            Sign In
+        </h1>
+        <input type="text" placeholder="Email or phone number" class="input-text-email">
+        <input type="password" placeholder="Password" class="pass-input-0">
+        <input type="submit" class="btn-login-page" placeholder="Get Started">
+        <div class="in-line-box-0">
+       <div class="pack-1"> <input type="checkbox" placeholder="Remember me" class="input-rem"> Remember me</div>
+        <p class="help-1">Need help?</p>
+        </div>
+        <span class="new-web">New to SPEVCS?<span class="new-opt-sign-up">Sign up now.</span></span>    
+    </div>
+    <footer class="footer">
+        <div class="container-3">
+            <div class="row">
+                <div class="footer-col">
+                    <a href="About.html">
+                        <h4>Company</h4>
+                    </a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Services.html">Our Service</a></li>
+                        
+                        <li><a href="Product.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="Credit.html">
+                        <h4>Credits</h4>
+                    </a>
+                    <ul>
+                        <li><a href="Ishan.html">Ishan Rajvanshi</a></li>
+                        <li><a href="abhiraj.html">Abhiraj</a></li>
+                        <li><a href="Reet.html">Reet Agrawal</a></li>
+                        <li><a href="harshit.html">Harshit Jangid</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <a href="FAQ.html">
+                        <h4>Get Help</h4>
+                    </a>
+                    <ul>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@greenlanterns" target="_blank"><i
+                                class="fab fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>
