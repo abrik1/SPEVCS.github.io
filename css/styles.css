@@ -419,7 +419,7 @@ font-size: 12px
 
 
 
-.container{
+.container1{
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -430,25 +430,25 @@ font-size: 12px
     min-height: 480px;
 }
 
-.container p{
+.container1 p{
     font-size: 12px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.container span{
+.container1 span{
     font-size: 12px;
 }
 
-.container a{
+.container1 a{
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.container button{
+.container1 button{
     background-color: #48b8d1;
     color: #fff;
     font-size: 12px;
@@ -462,12 +462,12 @@ font-size: 12px
     cursor: pointer;
 }
 
-.container button.hidden{
+.container1 button.hidden{
     background-color: transparent;
     border-color: #fff;
 }
 
-.container form{
+.container1 form{
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -477,7 +477,7 @@ font-size: 12px
     height: 100%;
 }
 
-.container input{
+.container1 input{
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -501,7 +501,7 @@ font-size: 12px
     z-index: 2;
 }
 
-.container.active .sign-in{
+.container1.active .sign-in{
     transform: translateX(100%);
 }
 
@@ -512,7 +512,7 @@ font-size: 12px
     z-index: 1;
 }
 
-.container.active .sign-up{
+.container1.active .sign-up{
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -557,7 +557,7 @@ font-size: 12px
     z-index: 1000;
 }
 
-.container.active .toggle-container{
+.container1.active .toggle-container{
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
@@ -575,7 +575,7 @@ font-size: 12px
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle{
+.container1.active .toggle{
     transform: translateX(50%);
 }
 
@@ -611,5 +611,88 @@ font-size: 12px
     transform: translateX(200%);
 }
 
-@media (max-width: 800px){
+/*Mobile Login page CSS starts */
+
+.top-main-mobile-login{
+    display: none;
+}
+.box-Sign{
+    display: grid;
+}
+.login-header-0{
+    text-align: left;
+    width: 100%;
+}
+
+.sign-in-text{
+    margin-left: 22px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 28px;
+}
+
+.input-text-email{
+    background: #191818;
+    padding: 24px 8px;
+    color: #ffffff;
+    border: none;
+    margin: 7px 22px;
+    border-radius: 7px;
+}
+
+.pass-input-0{
+    background: #191818;
+    padding: 24px 8px;
+    color: #ffffff;
+    border: none;
+    margin: 7px 22px;
+    border-radius: 7px;
+}
+
+.btn-login-page{
+    background: linear-gradient(93.87deg,#5E81AC,#8FBCBB);
+    padding: 18px 14px;
+    color: #ffffff;
+    border: none;
+    margin: 12px 22px;
+    border-radius: 7px;
+}
+
+.in-line-box-0{
+    display: inline-flex;
+    justify-content: space-between;
+    color: #919193;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pack-1{
+    margin: 7px 22px;
+}
+
+.help-1{
+    font-size: 14px;
+    color: #ffffff8a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin: 7px 22px;
+}
+
+.new-web{
+    color: #ffffff8a;
+    margin: 27px 22px;
+    font-family: 'Poppins', sans-serif ;
+}
+.new-opt-sign-up{
+    color: #fff;
+}
+
+.logo-14{
+    text-decoration: none;
+    color: #e4e4e4;
+    font-weight: 1000;
+    margin: 7px 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px; margin-top: 0; right: 0;
 }
