@@ -183,7 +183,7 @@ ul {
     margin-top: var(--flow-space, 1.25em);
   }
   
-  .cta {
+  .cta1 {
     display: block;
     align-self: end;
     margin: 1em 0 0.5em 0;
@@ -223,7 +223,7 @@ ul {
     box-shadow: 0 0 0 1px inset hsl(var(--hsl));
   }
   
-  .overlay .cta {
+  .overlay .cta1 {
     display: block;
     grid-row: -1;
     width: 100%;
@@ -850,3 +850,116 @@ font-size: 12px
     font-family: 'Poppins', sans-serif;
     font-size: 44px; margin-top: 0; right: 0;
 }
+
+/* product page css start's here */
+.Product-sec{
+    height: 90dvh;
+    padding: 0;
+    margin: 0;
+}
+
+.product-title{
+}
+
+.top-text-product{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 12px 7px 0px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.tag-line-product{
+    color: #e6e2e285;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 4px;
+    font-weight: 500;
+}
+
+.product-holder{
+    display: flex;
+    justify-content: center;
+}
+
+.product-box{
+    border-radius: 12px;
+    height: 100%;
+    width: 70%;
+    background: #2d2d2d;
+    margin: 44px;
+    display: flex;
+}
+
+.product-box-part-1{
+    width: 50%;
+}
+.product-show-img{
+width: 100%;
+}
+
+.des-product{
+    color: #efebeb;
+    font-size: 32px;
+    padding: 5px;
+}
+
+.price-of-product{
+    color: #e1dcdce3;
+    font-size: 24px;
+}
+
+.sy{
+    font-size: 18px;
+    display: table-caption;
+}
+
+.btn-product-page{
+    background: #00a800;
+    border: none;
+    width: 150px;
+    height: 40px;
+    display: flow;
+    padding: 7px 14px;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 12px 0px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s;
+}
+
+.btn-product-page:hover{
+    transform: scale(0.96);
+}
+
+.des-product-1{
+color:#b6b1b1e5 ;
+margin: 4px;
+}
+
+.des-text-product{
+    text-transform: capitalize;
+    color: #cecece;
+    display: block;
+}
+
+.product-box-part-2{
+    width: 100%;
+}
+
+.wl{
+    color: #888e94;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.btn-p{
+    display: flex;
+    align-items: center;
+}
+
